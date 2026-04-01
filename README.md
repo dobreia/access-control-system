@@ -1,6 +1,15 @@
 # Access Control System
 
-🇬🇧 English below
+---
+
+## 🇭🇺 Magyar / 🇬🇧 English
+
+- [🇭🇺 Magyar leírás](#-magyar-leírás)
+- [🇬🇧 English documentation](#-english-documentation)
+
+---
+
+# 🇭🇺 Magyar leírás
 
 ## 📌 Áttekintés
 
@@ -46,10 +55,10 @@ A rendszer célja a dolgozók, munkakörök és helyiségek kezelésének támog
 
 ## 📁 Főbb entitások
 
-- User – dolgozók/felhasználók
-- Position – munkakörök
-- Room – helyiségek
-- UserRoomEntry – belépési események
+- `User` – dolgozók / felhasználók
+- `Position` – munkakörök
+- `Room` – helyiségek
+- `UserRoomEntry` – belépési események
 
 ---
 
@@ -57,8 +66,10 @@ A rendszer célja a dolgozók, munkakörök és helyiségek kezelésének támog
 
 ### 1. Függőségek telepítése
 
+```bash
 composer install
 npm install
+```
 
 ### 2. Környezeti változók beállítása
 
@@ -66,23 +77,33 @@ Másold le az `.env.example` fájlt `.env` néven, majd állítsd be a szükség
 
 ### 3. Alkalmazás kulcs generálása
 
+```bash
 php artisan key:generate
+```
 
 ### 4. Adatbázis migráció
 
+```bash
 php artisan migrate
+```
 
 ### 5. Seeder futtatása
 
+```bash
 php artisan db:seed
+```
 
-### 6. Frontend build vagy fejlesztői mód
+### 6. Frontend build / fejlesztői mód
 
+```bash
 npm run dev
+```
 
-### 7. Laravel indítása
+### 7. Laravel szerver indítása
 
+```bash
 php artisan serve
+```
 
 ---
 
@@ -98,17 +119,17 @@ A projekt egyetemi feladatként készült, de jól bemutatja egy Laravel alapú 
 
 ---
 
-## 🇬🇧 English
+# 🇬🇧 English documentation
 
 ## 📌 Overview
 
 Access Control System is a Laravel-based web application that models the core functionality of a simple entry management system.
 
-The goal of the project is to manage employees, positions, and rooms, while also keeping track of room access history and access-related records.
+The goal of the project is to manage employees, positions, and rooms, while also tracking room access permissions and entry events.
 
 ---
 
-## 🚀 Main Features
+## 🚀 Main features
 
 - User authentication
 - Employee listing, editing, and deletion
@@ -116,11 +137,11 @@ The goal of the project is to manage employees, positions, and rooms, while also
 - Room management
 - Room entry history display
 - Permission-based access to certain actions
-- Homepage statistics for users and rooms
+- Dashboard statistics for users and rooms
 
 ---
 
-## 🧠 Key Technical Highlights
+## 🧠 Key technical solutions
 
 - Laravel MVC architecture
 - Eloquent models and relationships
@@ -131,7 +152,7 @@ The goal of the project is to manage employees, positions, and rooms, while also
 
 ---
 
-## 🛠 Technologies
+## 🛠 Technologies used
 
 - PHP
 - Laravel
@@ -142,12 +163,12 @@ The goal of the project is to manage employees, positions, and rooms, while also
 
 ---
 
-## 📁 Main Entities
+## 📁 Main entities
 
-- User – employees/users
-- Position – job roles
-- Room – rooms
-- UserRoomEntry – entry events
+- `User` – employees / users
+- `Position` – job roles
+- `Room` – rooms
+- `UserRoomEntry` – entry events
 
 ---
 
@@ -155,8 +176,10 @@ The goal of the project is to manage employees, positions, and rooms, while also
 
 ### 1. Install dependencies
 
+```bash
 composer install
 npm install
+```
 
 ### 2. Configure environment variables
 
@@ -164,29 +187,39 @@ Copy `.env.example` to `.env` and set the required values.
 
 ### 3. Generate application key
 
+```bash
 php artisan key:generate
+```
 
 ### 4. Run migrations
 
+```bash
 php artisan migrate
+```
 
 ### 5. Run seeders
 
+```bash
 php artisan db:seed
+```
 
-### 6. Start frontend build/dev mode
+### 6. Start frontend build / dev mode
 
+```bash
 npm run dev
+```
 
 ### 7. Start Laravel server
 
+```bash
 php artisan serve
+```
 
 ---
 
 ## 🎯 Purpose
 
-The project was created to model the foundations of an access control system, focusing on data structures, entity relationships, authorization, and administration features.
+The project was created to model the foundations of an access control system, focusing on data structures, entity relationships, authorization, and administrative features.
 
 ---
 
